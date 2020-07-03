@@ -16,17 +16,49 @@
 //   };
   
 // webpack.config.js
-module.exports = {
+// module.exports = {
+//     presets: [
+//       [
+//         "@babel/env",
+//         {
+//           useBuiltIns: "usage",
+//           corejs: { version: 3, proposals: true }
+//         }
+//       ]
+//     ],
+//     plugins: ["@babel/plugin-transform-runtime"]
+//   };
+  
+// webpack.config.js
+// module.exports = {
+//     presets: ["@babel/env"],
+//     plugins: [
+//       [
+//         "@babel/plugin-transform-runtime",
+//         {
+//           corejs: { version: 3 }
+//         }
+//       ]
+//     ]
+//   };
+
+  module.exports = {
     presets: [
       [
         "@babel/env",
         {
-          useBuiltIns: "usage",
-          corejs: { version: 3, proposals: true }
+        //   useBuiltIns: "usage",
+        //   corejs: { version: 3, proposals: true }
         }
       ]
     ],
-    plugins: ["@babel/plugin-transform-runtime"]
+    plugins: [
+        [
+          "@babel/plugin-transform-runtime",
+          {
+            corejs: { version: 3 }
+          }
+        ]
+      ]
   };
-  
   
