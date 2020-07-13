@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "babel": "babel index.js --out-file compiled.js"
+    "babel": "babel exam.js --out-file exam_build_ie9.js",
+    "newIndex": "babel newIndex.js --out-file newIndex_ie9.js",
+    "target": "babel newIndex.js --out-file target_ie9.js",
+    "usage": "babel newIndex.js --out-file target_ie9_usage.js"
   },
   "keywords": [],
   "author": "",
